@@ -96,6 +96,10 @@ class Installer
      */
     public function extract()
     {
+        if (is_null($this->source)) {
+            return;
+        }
+
         $this->getLogger()->info("Extracting {$this->source} into " . $this->getPath() . '...');
         if (!is_dir($this->getPath()) || !$this->fs->isEmpty($this->getPath())) {
             throw new InstallerException(
