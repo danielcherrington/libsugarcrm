@@ -1,5 +1,5 @@
 {
-    "name": "inetprocess/libsugarcrm",
+    "name": "enable/libsugarcrm",
     "description": "This library provides a various classes to interact with SugarCRM",
     "type": "library",
     "keywords": ["sugarcrm", "sugarcli"],
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Inet\\SugarCRM\\": "src/"
+            "Enable\\SugarCRM\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Inet\\SugarCRM\\Tests\\": "tests/"
+            "Enable\\SugarCRM\\Tests\\": "tests/"
         }
     }
 }
